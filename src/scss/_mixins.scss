@@ -1,0 +1,52 @@
+@mixin wh($w, $h) {
+  width: $w;
+  height: $h;
+} 
+
+@mixin fwfslh ($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+} 
+
+@mixin fwfslhls ($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin container($size) {
+  max-width: $size;
+  margin: 0 auto;
+}
+
+@mixin pos-tl($top, $left) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin pos-tr($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin pos-br($bottom, $right) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin pos-bl($bottom, $left) {
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin df-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
