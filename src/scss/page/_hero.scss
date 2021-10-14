@@ -3,7 +3,7 @@
   background-image: url(../../img/illustration-top.svg);
   background-repeat: no-repeat;
   background-size: contain; 
-  background-position: center; 
+  background-position: top; 
 
   &__content {
     width: 50%;
@@ -14,7 +14,7 @@
   }
 
   &__wrapper {
-    height: 100%;
+    height: calc(100% - 230px);
     display: flex;
     align-items: center;
   }
