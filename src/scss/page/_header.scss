@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  &__inner {
+    height: 132px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+} 
+
+.navigation {
+  &__list {
+    display: flex;
+    &-item {
+      margin-right: 60px;
+    }
+
+    &-item + &-item:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    @include fwfslh(normal, 18px, 27px);
+  }
+} 

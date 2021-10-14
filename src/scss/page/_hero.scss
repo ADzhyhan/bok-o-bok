@@ -1,0 +1,32 @@
+.hero {
+  height: 100vh;
+  background-image: url(../../img/illustration-top.svg);
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center; 
+
+  &__content {
+    width: 50%;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    @include fwfslh(bold, 52px, 60px); 
+    color: $primary;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    @include fwfslh(normal, 24px, 36px);
+    margin-bottom: 40px;
+  }
+}

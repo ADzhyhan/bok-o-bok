@@ -11,7 +11,32 @@
 } 
 
 body {
-  
+  font-family: 'URW Geometric';
+  background-color: #fff;
+  color: $typography;
 }
+
+.container {
+  @include container(1110px);
+}
+ 
+.text_green {
+  color: $green;
+}
+
+.button {
+  background-color: $green;
+  border-radius: 13px; 
+  text-align: center; 
+  height: 62px;
+  color: #fff;
+  border: none;
+  padding: 0 16px;
+  @include fwfslh(bold, 20px, 30px);
+}
+
+@import 'page/header';
+@import 'page/hero';
+
 
 @import 'media/media';

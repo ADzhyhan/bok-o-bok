@@ -19,6 +19,7 @@
 @mixin container($size) {
   max-width: $size;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 @mixin pos-tl($top, $left) {

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'URW Geometric';
+  src: url('../fonts/URWGeometric-Bold.eot');
+  src: local('URW Geometric Bold'), local('URWGeometric-Bold'),
+      url('../fonts/URWGeometric-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/URWGeometric-Bold.woff2') format('woff2'),
+      url('../fonts/URWGeometric-Bold.woff') format('woff'),
+      url('../fonts/URWGeometric-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'URW Geometric';
+  src: url('../fonts/URWGeometric-Regular.eot');
+  src: local('URW Geometric Regular'), local('URWGeometric-Regular'),
+      url('../fonts/URWGeometric-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/URWGeometric-Regular.woff2') format('woff2'),
+      url('../fonts/URWGeometric-Regular.woff') format('woff'),
+      url('../fonts/URWGeometric-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

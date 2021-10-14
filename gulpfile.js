@@ -73,9 +73,10 @@ async function build() {
 }
 
 function watch() {
+  build();
   browserSync.init({
     server: {
-      baseDir: "./dist",
+      baseDir: './dist',
       index: 'index.html'
     }
   });
