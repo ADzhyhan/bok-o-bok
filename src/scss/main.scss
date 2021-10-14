@@ -34,9 +34,19 @@ body {
   padding: 0 16px;
   @include fwfslh(bold, 20px, 30px);
 }
+ 
+.title {
+  @include fwfslh(bold, 40px, 60px);
+  text-align: center;
+}
+
+.text {
+  @include fwfslh(normal, 18px, 27px);
+}
 
 @import 'page/header';
 @import 'page/hero';
+@import 'page/benefits';
 
 
 @import 'media/media';
