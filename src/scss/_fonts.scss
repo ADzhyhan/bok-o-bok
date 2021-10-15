@@ -21,3 +21,40 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'URW Geometric';
+  src: url('../fonts/URWGeometric-Black.eot');
+  src: local('URW Geometric Black'), local('URWGeometric-Black'),
+      url('../fonts/URWGeometric-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/URWGeometric-Black.woff2') format('woff2'),
+      url('../fonts/URWGeometric-Black.woff') format('woff'),
+      url('../fonts/URWGeometric-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  src: url('../fonts/Glyphter.eot');
+  src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Glyphter.woff') format('woff'),
+       url('../fonts/Glyphter.ttf') format('truetype'),
+       url('../fonts/Glyphter.svg#Glyphter') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*='icon-']:before{
+ display: inline-block;
+ font-family: 'Glyphter';
+ font-style: normal;
+ font-weight: normal;
+ line-height: 1;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale
+}
+.icon-check:before{content:'\0041';}
+.icon-fb:before{content:'\0042';}
+.icon-inst:before{content:'\0043';}
+.icon-link:before{content:'\0044';}
+.icon-x:before{content:'\0045';}
