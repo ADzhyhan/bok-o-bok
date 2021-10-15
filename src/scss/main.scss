@@ -38,15 +38,27 @@ body {
 .title {
   @include fwfslh(bold, 40px, 60px);
   text-align: center;
+  color: $primary; 
 }
 
 .text {
   @include fwfslh(normal, 18px, 27px);
 }
 
+.small-title {
+  @include fwfslh(bold, 24px, 36px);
+  color: $primary;
+}
+
+.page-text {
+  @include fwfslh(normal, 18px, 27px);
+}
+
+
 @import 'page/header';
 @import 'page/hero';
 @import 'page/benefits';
 @import 'page/info';
+@import 'page/steps';
 
 @import 'media/media';
