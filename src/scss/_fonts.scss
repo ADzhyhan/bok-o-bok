@@ -35,18 +35,18 @@
 }
 
 @font-face {
-  font-family: 'Glyphter';
-  src: url('../fonts/Glyphter.eot');
-  src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Glyphter.woff') format('woff'),
-       url('../fonts/Glyphter.ttf') format('truetype'),
-       url('../fonts/Glyphter.svg#Glyphter') format('svg');
+  font-family: 'bokobok';
+  src: url('../fonts/bokobok.eot');
+  src: url('../fonts/bokobok.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/bokobok.woff') format('woff'),
+       url('../fonts/bokobok.ttf') format('truetype'),
+       url('../fonts/bokobok.svg#bokobok') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 [class*='icon-']:before{
- display: inline-block;
- font-family: 'Glyphter';
+display: inline-block;
+ font-family: 'bokobok';
  font-style: normal;
  font-weight: normal;
  line-height: 1;
