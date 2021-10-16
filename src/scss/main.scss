@@ -20,6 +20,10 @@ body {
   @include container(1110px);
 }
  
+.section {
+  padding: 160px 0;
+}
+
 .text_green {
   color: $green;
 }
