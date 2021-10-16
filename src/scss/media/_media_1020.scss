@@ -1,0 +1,159 @@
+@media (max-width: 1020px) {
+  .header__inner {
+    height: 122px;
+  }
+
+  .hero {
+    &__title {
+      @include fwfslh(700, 45px, 53px);
+    }
+
+    &__subtitle {
+      @include fwfslh(normal, 21px, 32px);
+    } 
+  }
+
+  .button {
+    height: 59px;
+    @include fwfslh(bold, 18px, 27px);
+  }
+
+  .title {
+    @include fwfslh(bold, 36px, 49px);
+  }
+
+  .text {
+    @include fwfslh(normal, 17px, 25px);
+  }
+
+  .info {
+    padding-top: 70px;
+    min-height: 530px;
+
+    &__illustration {
+      width: 100%;
+    }
+
+    &__content {
+      width: 50%;
+    }
+
+    &__title {
+      width: 100%;
+    }
+  }
+
+  .section {
+    padding: 125px 0;
+    &-header {
+      margin-bottom: 100px;
+
+      &__line {
+        margin: 20px 0;
+      }
+    }
+  }
+
+  .steps {
+    &__container {
+      margin: 100px 0; 
+      &-item {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 14px;
+    }
+
+    &__num {
+      @include fwfslh(850, 56px, 75px);
+
+      &::before {
+        top: 133px;
+      }
+    }
+  }
+
+  .small-title {
+    @include fwfslh(bold, 23px, 34px);
+  }
+
+  .cards {
+    &__container {
+      flex-wrap: wrap-reverse;
+      justify-content: space-around;
+      align-items: inherit;
+    }
+
+    &__card {
+      max-width: 400px;
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .marketing {
+    &__img {
+      width: 100%;
+    }
+
+    &__image {
+      width: 43%;
+    }
+  }
+
+  .package {
+    &__card {
+      padding: 50px 55px;
+      &:first-child {
+        margin-right: 60px;
+      }
+
+      &-line {
+        margin-top: 26px;
+        margin-bottom: 46px;
+      }
+    }
+
+    &__text-btm {
+      margin-top: 20px;
+    }
+  }
+
+  .feedback {
+    &__illustration {
+      width: 50%;
+    }
+
+    &__wrapper {
+      justify-content: space-around;
+    }
+
+    &__form {
+      &-input {
+        margin-top: 8px;
+        @include fwfslh(normal, 17px, 25px);
+        height: 52px;
+      }
+
+      &-button {
+        margin-top: 14px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &__input-group {
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer {
+    padding-bottom: 40px;
+
+    &__inner {
+      height: 270px;
+    }
+  }
+}
