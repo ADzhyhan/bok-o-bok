@@ -1,0 +1,159 @@
+@media (max-width: 768px) {
+  .header {
+    &__inner {
+      height: 105px;
+    }
+  }
+
+  .navigation__list-item {
+    margin-right: 50px;
+  }
+
+  .hero {
+    &__title {
+      @include fwfslh(bold, 38px, 43px);
+    }
+
+    &__subtitle {
+      @include fwfslh(normal, 20px, 30px);
+    }
+  }
+
+  .button {
+    height: 55px;
+    @include fwfslh(bold, 16px, 25px);
+  }
+
+  .title {
+    @include fwfslh(bold, 31px, 43px);
+  }
+
+  .benefits {
+    margin: 130px 0 100px 0;
+
+    &__title {
+      margin-bottom: 100px;
+    }
+
+    &__text {
+      margin-top: 23px;
+    }
+  }
+
+  .info {
+    padding-top: 50px;
+    min-height: 400px;
+  }
+
+  .section {
+    padding: 100px 0;
+    &-header {
+      margin-bottom: 85px;
+    }
+  }
+
+  .steps {
+    &__container {
+      margin-top: 90px;
+      &-item {
+        width: 80%;
+      }
+    }
+  }
+
+  .cards {
+    &__container {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      max-width: 430px;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .marketing{ 
+    &__block {
+      margin-bottom: 80px;
+    }
+
+    &__content {
+      width: 47%;
+    }
+  }
+
+  .package {
+    &__card {
+      padding: 25px 24px;
+      &:first-child {
+        margin-right: 20px;
+      }
+
+      &-title {
+        @include fwfslh(700, 23px, 28px);
+        margin-bottom: 23px;
+      }
+
+      &-price {
+        @include fwfslh(900, 55px, 43px);
+      }
+
+      &-month {
+        @include fwfslh(normal, 23px, 27px)
+      }
+
+      &-line {
+        width: 215px;
+        margin-top: 23px;
+        margin-bottom: 33px;
+      }
+
+      &-btn {
+        height: 43px;
+      }
+    }
+
+    &__benefits {
+      &-item {
+        margin-bottom: 15px;
+      }
+      margin-bottom: 40px;
+    }
+  }
+
+  .feedback {
+    &__illustration {
+      width: 44%;
+    }
+
+    &__form {
+      width: 38%;
+      &-input {
+        margin-top: 5px;
+        height: 43px;
+      }
+
+      &-button {
+        height: 45px;
+      }
+
+      &-text {
+        @include fwfslh(normal, 15px, 20px);
+      }
+    }
+
+    &__input-group {
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer {
+    padding-bottom: 30px;
+    &__inner {
+      height: 230px;
+    }
+  }
+}

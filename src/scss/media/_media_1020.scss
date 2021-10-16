@@ -26,6 +26,10 @@
     @include fwfslh(normal, 17px, 25px);
   }
 
+  .benefits {
+    margin: 160px 0 105px 0;
+  }
+
   .info {
     padding-top: 70px;
     min-height: 530px;
@@ -76,7 +80,7 @@
   }
 
   .small-title {
-    @include fwfslh(bold, 23px, 34px);
+    @include fwfslh(bold, 23px, 30px);
   }
 
   .cards {
