@@ -1,0 +1,135 @@
+@media (max-width: 480px) {
+  .header {
+    .logo {
+      width: 80px;
+    }
+    &__inner {
+      height: 50px;
+    }
+  }
+
+  .title {
+    @include fwfslh(bold, 19px, 25px);
+  }
+
+  .text {
+    @include fwfslh(normal, 12px, 17px);
+  }
+
+  .button {
+    @include fwfslh(bold, 12px, 18px);
+    height: 37px;
+  }
+
+  .navigation {
+    &__list-item {
+      margin-right: 17px;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+  }
+
+  .hero {
+    background-position: center;
+    &__content {
+      width: 63%;
+    }
+    &__title {
+      @include fwfslh(700, 27px, 26px);
+      margin-bottom: 40px;
+    }
+    &__subtitle {
+      @include fwfslh(normal, 15px, 18px);
+      margin-bottom: 30px;
+    }
+  }
+
+  .benefits {
+    margin: 50px 0;
+    &__img {
+      width: 35px;
+    }
+    &__text {
+      margin-top: 8px;
+    }
+  }
+
+  .info {
+    padding-top: 20px;
+    min-height: 225px;
+    &__content {
+      width: 55%;
+    }
+  }
+
+  .section {
+    padding: 50px 0;
+    &-header {
+      margin-bottom: 50px;
+      &__text {
+        width: 58%;
+      }
+      &__line {
+        margin: 12px 0;
+        width: 170px;
+      }
+    }
+  }
+
+  .steps {
+    &__container {
+      margin: 50px 0;
+    }
+  }
+
+  .small-title {
+    @include fwfslh(bold, 15px, 18px)
+  }
+
+  .cards {
+    &__card {
+      max-width: 320px;
+      padding: 30px;
+      margin-bottom: 20px;
+      &-img {
+        width: 30px;
+      }
+    }
+  }
+
+  .marketing {
+    &__block {
+      margin-bottom: 50px;
+    }
+    &__image {
+      width: 36%;
+    }
+    &__content {
+      width: 60%;
+    }
+  }
+
+  .feedback {
+    &__title {
+      width: 81%;
+    }
+  }
+
+  .footer {
+    padding-bottom: 10px;
+    &__inner {
+      height: 120px;
+    }
+    .logo {
+      width: 120px;
+    }
+    &__link {
+      @include fwfslh(normal, 10px, 10px);
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
