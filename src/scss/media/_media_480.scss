@@ -32,9 +32,9 @@
   }
 
   .hero {
-    background-position: center;
     &__content {
-      width: 63%;
+      width: 100%;
+      text-align: center;
     }
     &__title {
       @include fwfslh(700, 27px, 26px);

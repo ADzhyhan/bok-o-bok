@@ -5,7 +5,7 @@
     align-items: center;
     margin-bottom: 100px;
 
-    &:nth-child(2n) {
+    &:nth-child(3n) {
       flex-direction: row-reverse;
     }
   }
