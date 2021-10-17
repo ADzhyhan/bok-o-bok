@@ -25,6 +25,10 @@
   &__link {
     @include fwfslh(normal, 18px, 27px);
   }
+
+  .menu__list-item {
+    display: none;
+  }
 } 
 
 .logo__img {
