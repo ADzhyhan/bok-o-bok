@@ -15,6 +15,14 @@
     display: flex;
     &-item {
       margin-right: 60px;
+      border-bottom: 1px solid transparent;
+      transition: .5s all;
+      padding-bottom: 3px;
+      &:hover {
+        cursor: pointer;
+        border-bottom: 1px solid $primary;
+        transition: .5s all;
+      }
     }
 
     &-item + &-item:last-child {
@@ -27,6 +35,10 @@
   }
 
   .menu__list-item {
+    display: none;
+  }
+
+  &__btn {
     display: none;
   }
 } 

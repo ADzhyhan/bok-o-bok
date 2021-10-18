@@ -37,6 +37,15 @@ body {
   border: none;
   padding: 0 16px;
   @include fwfslh(bold, 20px, 30px);
+  transition: .3s all;
+  &:hover {
+    cursor: pointer; 
+    background-color: #04b186; 
+    transition: .3s all;
+  }
+  &:active {
+    background-color: #078f6d; 
+  }
 }
  
 .title {

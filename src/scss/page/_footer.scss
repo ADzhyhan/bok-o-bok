@@ -24,10 +24,30 @@
         margin-bottom: 0;
       }
     }
+    &__link {
+      border-bottom: 1px solid transparent;
+      transition: .5s all;
+      padding-bottom: 3px;
+      &:hover {
+        cursor: pointer;
+        border-bottom: 1px solid $primary;
+        transition: .5s all;
+      }
+    }
   }
 
   &__link:first-child {
     margin-right: 60px;
+  }
+  &__link {
+    border-bottom: 1px solid transparent;
+    transition: .5s all;
+    padding-bottom: 3px;
+    &:hover {
+      cursor: pointer;
+      border-bottom: 1px solid $primary;
+      transition: .5s all;
+    }
   }
 }
 
@@ -39,6 +59,16 @@
 
     &-item + &-item:last-child {
       margin-bottom: 0;
+    }
+  }
+  &__link {
+    border-bottom: 1px solid transparent;
+    transition: .5s all;
+    padding-bottom: 3px;
+    &:hover {
+      cursor: pointer;
+      border-bottom: 1px solid $primary;
+      transition: .5s all;
     }
   }
 }
@@ -53,5 +83,13 @@
 
   &__item + &__item:last-child {
     margin-right: 0;
+  }
+
+  &__link {
+    transition: .3s all;
+    &:hover {
+      color: #6d8bed;
+      transition: .3s all;
+    }
   }
 }
