@@ -1,33 +1,23 @@
 @media (max-width: 480px) {
   .header {
-    .logo {
-      width: 80px;
-    }
-    &__inner {
-      height: 50px;
-    }
   }
 
   .title {
-    @include fwfslh(bold, 19px, 25px);
+    @include fwfslh(bold, 23px, 28px);
   }
 
   .text {
-    @include fwfslh(normal, 12px, 17px);
+    @include fwfslh(normal, 14px, 19px);
   }
 
   .button {
-    @include fwfslh(bold, 12px, 18px);
-    height: 37px;
+    @include fwfslh(bold, 13px, 18px);
+    height: 40px;
   }
 
   .navigation {
-    &__list-item {
-      margin-right: 17px;
-    }
-
     &__link {
-      font-size: 12px;
+      padding: 7px 0;
     }
   }
 
@@ -37,11 +27,11 @@
       text-align: center;
     }
     &__title {
-      @include fwfslh(700, 27px, 26px);
-      margin-bottom: 40px;
+      @include fwfslh(700, 47px, 45px);
+      margin-bottom: 30px;
     }
     &__subtitle {
-      @include fwfslh(normal, 15px, 18px);
+      @include fwfslh(normal, 21px, 28px);
       margin-bottom: 30px;
     }
   }
@@ -69,7 +59,7 @@
     &-header {
       margin-bottom: 50px;
       &__text {
-        width: 58%;
+        width: 68%;
       }
       &__line {
         margin: 12px 0;
@@ -81,11 +71,35 @@
   .steps {
     &__container {
       margin: 50px 0;
+      &-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &:first-child {
+          .steps__content {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    &__content {
+      margin-left: 0;
+    }
+    &__num {
+      font-size: 54px;
+      &::before {
+        all: inherit;
+      }
+    }
+    &__title {
+      margin-top: 13px;
+
     }
   }
 
   .small-title {
-    @include fwfslh(bold, 15px, 18px)
+    @include fwfslh(bold, 17px, 21px)
   }
 
   .cards {
@@ -101,35 +115,52 @@
 
   .marketing {
     &__block {
-      margin-bottom: 50px;
+      margin-bottom: 35px;
+      flex-direction: column;
+      &:nth-child(3n) {
+        flex-direction: column;
+      }
     }
     &__image {
       width: 36%;
     }
     &__content {
-      width: 59%;
+      width: 75%;
+      text-align: center;
+      margin-top: 6px;
     }
+  }
+
+  .package__title {
+    width: 100%;
   }
 
   .feedback {
     &__title {
       width: 81%;
     }
+    &__form {
+      width: 70%;
+      &-input { 
+        font-size: 13px;
+      }
+    }
   }
 
   .footer {
     padding-bottom: 10px;
     &__inner {
-      height: 120px;
-    }
-    .logo {
-      width: 120px;
+      height: 100px;
     }
     &__link {
-      @include fwfslh(normal, 10px, 10px);
       &:first-child {
         margin-right: 0;
+        margin-bottom: 4px;
       }
+    }
+    &__bottom {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

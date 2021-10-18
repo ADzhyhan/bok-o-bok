@@ -1,22 +1,56 @@
 @media (max-width: 320px) {
   .header {
     .logo {
-      width: 70px;
+      width: 120px;
+    }
+    &__inner {
+      height: 70px;
     }
   }
 
+  .title {
+    @include fwfslh(bold, 22px, 26px);
+  }
+
   .navigation {
-    &__link {
-      font-size: 11px;
+    &__list {
+      top: 70px;
     }
-    &__list-item {
-      margin-right: 15px;
+    &__btn {
+      width: 23px;
+      height: 18px;
+      &::before {
+        width: 23px;
+        top: 6px;
+      }
+    }
+  }
+
+  .hero {
+    &__title {
+      @include fwfslh(bold, 38px, 39px);
+    }
+    &__subtitle {
+      @include fwfslh(normal, 19px, 23px);
+    }
+    &__wrapper {
+      align-items: flex-start;
+      padding-top: 10px;
     }
   }
 
   .benefits {
     &__item {
-      width: 40%;
+      width: 75%;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+    &__img {
+      width: 45px;
+    }
+    &__text {
+      margin-top: 5px;
     }
   }
 
@@ -31,54 +65,54 @@
     &__container {
       margin: 40px 0;
       &-item {
-        width: 90%;
         margin-bottom: 20px;
-        &:first-child {
-          .steps__num::before {
-            left: -31px;
-            top: 112px;
-          }
-          .steps__content {
-            margin-left: 40px;
-          }
-        }
       }
-    }
-    &__num {
-      font-size: 40px;
-      &::before {
-        left: -32px;
-        top: 121px;
-        width: 110px;
-      }
-    }
-    &__content {
-      margin-left: 35px;
     }
   }
 
   .button {
-    height: 35px;
-    font-size: 11px;
+    height: 38px;
+    font-size: 12px;
   }
 
   .section {
     &-header {
       &__text {
-        width: 75%;
+        width: 85%;
       }
     }
   }
 
+  .marketing__content {
+    width: 100%;
+  }
+
+  .package__benefits-text {
+    font-size: 13px;
+  }
+  .package__benefits-item {
+    margin-bottom: 11px;
+  }
+
   .feedback {
     &__form {
-      width: 80%;
+      width: 85%;
     }
   }
 
   .footer {
-    &-navigation {
-      display: none;
+    &__inner {
+      height: 115px;
+    }
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      width: 130px;
+    }
+    .social__link {
+      font-size: 20px;
     }
   }
 }
