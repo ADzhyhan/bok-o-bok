@@ -22,6 +22,25 @@ function style() {
     .pipe(browserSync.stream());
 }
 
+function libscss() {
+  return gulp.src([
+    './node_modules/aos/dist/aos.css',
+  ])
+    .pipe(concat('_libs.scss'))
+    .pipe(gulp.dest('src/scss'))
+    .pipe(browserSync.reload({stream: true}))
+}
+
+function libsjs() {
+  return gulp.src([
+    './node_modules/aos/dist/aos.js',
+  ])
+    .pipe(concat('libs.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'))
+    .pipe(browserSync.reload({stream: true}))
+}
+
 function html() {
   return gulp.src('./src/*.html')
     .pipe(gulp.dest('dist/'))
@@ -49,6 +68,8 @@ async function build() {
   await html();
   await font();
   await script();
+  await libscss();
+  await libsjs();
 }
 
 function watch() {
@@ -70,6 +91,8 @@ exports.style = style;
 exports.html = html;
 exports.font = font;
 exports.image = image;
+exports.libscss = libscss;
+exports.libsjs = libsjs;
 exports.script = script;
 exports.build = build;
 exports.watch = watch;
