@@ -76,6 +76,10 @@
     &__subtitle {
       @include fwfslh(normal, 20px, 30px);
     }
+
+    &__content {
+      z-index: -1;
+    }
   }
 
   .button {
